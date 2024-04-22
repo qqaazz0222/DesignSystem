@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Wanted Sans Variable";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400 1000;
+    src: url("./assets/fonts/WantedSansVariable.woff2")
+        format("woff2-variations");
+}
+
+* {
+    font-family: "Wanted Sans Variable" !important;
+}
+
+.w-responsive-sign {
+    width: 460px;
+    max-width: 460px;
+}
+
+@media screen and (min-width: 721px) {
+    .w-responsive-sign {
+        width: 460px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .w-responsive-sign {
+        width: calc(100% - 2rem);
+    }
+}
